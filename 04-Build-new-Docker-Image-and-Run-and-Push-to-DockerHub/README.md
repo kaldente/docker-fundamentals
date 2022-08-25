@@ -41,6 +41,13 @@ Replace your docker hub account Id
 docker tag <your-docker-hub-id>/mynginx_image1:v1 <your-docker-hub-id>/mynginx_image1:v1-release
 docker push <your-docker-hub-id>/mynginx_image1:v1-release
 ```
+
+#######################################################################################################################
+  926  docker build -t kaldente/kubernetes_masterclass:version.1.0 .  (Create Dockerfile and index.html first)
+  9xx  docker push kaldente/kubernetes_masterclass:version.1.0
+  938  docker run --name mynginx_from_hub -p 80:80 -d kaldente/kubernetes_masterclass:version.1.0
+#######################################################################################################################
+
 ## Step-5: Verify the same on docker hub
 - Login to docker hub and verify the image we have pushed
 - Url: https://hub.docker.com/repositories
